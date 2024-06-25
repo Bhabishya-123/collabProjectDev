@@ -44,3 +44,14 @@ document.getElementById('email').addEventListener('input', function() {
 document.getElementById('phone').addEventListener('input', function() {
     document.getElementById('phoneError').textContent = '';
 });
+
+const submitBtn = document.getElementById('submitBtn');
+
+submitBtn.addEventListener('click', ()=>{
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const address = document.getElementById('address').value;
+    const phone = document.getElementById('phone').value;
+
+    console.log('Name: ', name,', Email: ', email, ', Address: ', address, ', Phone: ', phone)
+})
